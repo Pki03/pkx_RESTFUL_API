@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{res.send("hi you are on home page");})
 
 
 
-
+//if you want this code to work on yours replace process.env.DBCONNECTION with your mongp atlas link
 
 mongoose.connect(process.env.DBCONNECTION,{useNewUrlParser:true})
   .then(() => console.log("Connected to DBCONNECTION"))
